@@ -70,6 +70,6 @@ Você pode também rodar o projeto no modo headless
 
 9. Após a execução dos cenários, será encontrado o relatório dos testes dentro da pasta:
 
-    `QA.DEMO-LUMA-STORE\mochawesome-report\mochawesome.html`
+    `qa_projeto_lumastore\mochawesome-report\mochawesome.html`
 
 >  This is a challenge by [Coodesh](https://coodesh.com/)
