@@ -1,65 +1,75 @@
 # Q.A Challenge Luma Store
 
-Este é um desafio para que possamos ver as suas habilidades como QA/Tester.
+- Challenge by coodesh
 
-Nesse desafio você deverá testar de forma automatizada o site Luma Store. O projeto a ser desenvolvido por você tem como objetivo exibir executar ações na loja conforme indicado nos casos de uso que estão logo abaixo.
+- Autor: Diego Spinucci Cavalcanti
 
-[SPOILER] As instruções de entrega e apresentação do challenge estão no final deste Readme (=
+Este é um desafio técnico da Coodesh utlizado para avaliar as habilidades relacionadas a automação de  testes .
 
-### Antes de começar
+Foi aplicado os conceitos de teste caixa preta, onde a página https://magento.softwaretestingboard.com foi testada em Cypress.
+
+
+Neste projeto foram testados os seguintes Cenários: 
+
+- Se a HomePage é carregada corretamente;
+- Buscar por `shirt` na barra de busca, validando o retorno da ultima sugestão;
+- Adicionar um produto no carrinho;
+- Realizar um cadastro como usuário;
+- Realizar um comentário em um produto;
+- Realizar checkout;
  
-- Considere como prazo limite da avaliação o período a partir do início do teste. Se, por algum motivo, não for possível concluir dentro deste prazo, avise a pessoa que o convidou para receber instruções sobre o que fazer.
-- Documente todo o processo de investigação para o desenvolvimento da atividade (README.md no seu repositório); os resultados destas tarefas são tão importantes quanto o seu processo de pensamento e decisões à medida que as completa, por isso, tente documentar e apresentar as suas hipóteses e decisões na medida do possível.
+
+# Linguagem, framework e tecnologias Utilizadas.
+
+Neste projeto foi utlizado o framework Cypress.io em sua versão 13.15.2;
+Node em sua versão 13.12.0
+Casos de teste na linguagem JavaScript;
+Repórter dos cenários Mochawesome Repórter;
+Para gerar os dados do cadastro do cliente utilizei a API https://randomuser.me/.
 
 
-#### Tecnologias:
-- Ferramenta: Ghost Inspector, Selenium, Cypress, Robot Framework, ou outro de seu conhecimento
-- Adicionais: Cucumber ou outros plugins necessários para configurar a ferramenta
+- **Framework Cypress** - Além de seu tempo de execução rápido, testes em paralelo e de sua simplicidade e facilidade de uso, o Cypress possui uma sintaxe amigável e uma interface de usuário  intuitiva, além de uma excelente documentação e comunidade.
 
-## Teste
+- **Por que não outra linguagem?** - O Selenium possui uma api um pouco mais complexa e uma configuração um pouco maior. Além disso, ele comunica com os navegadores externos por meio do WebDriver, pode ter tempos de execução mais lentos em comparação com o Cypress.
 
-Neste desafio aplicaremos os conceitos de teste caixa preta, onde testaremos a página https://magento.softwaretestingboard.com
+- O Robot Framework não é tão eficiente em termos de desempenho quanto o Cypress ou o Selenium, especialmente para testes complexos ou em larga escala.
 
-> Nota: utilize dados fictícios criados através do site https://randomuser.me
 
-**Obrigatório 1** - Para realizar o teste precisamos escolher a ferramenta de teste. Explicar o por quê da escolha, as vantagens e desvantagens dos que não foram escolhidos.
+# Como instalar e usar o projeto?
 
-**Obrigatório 2** - Você deverá atender aos seguintes casos de uso:
+A. Após fazer o git clone deste projeto para sua máquina local, acesse o diretório do projeto e siga os seguintes passos: 
 
-- Se a página está carregando corretamente a home page;
-- Buscar por `shirt` no menu superior e revisar se a página de resultados carregou corretamente. Veja o diferencial 1 para incrementar este caso de uso;
-- Adicionar um produto no carrinho
-- Realizar checkout
+1. **Instale o Cypress**: 
 
-### Diferenciais
-Além do que foi solicitado, existem itens adicionais para incrementar o projeto final. Você também pode adicionar algum recurso não citado anteriormente.
+    `npm install cypress --save-dev`
 
-- **Diferencial 1** - Buscar por `shirt` no menu superior e clicar no último resultado sugerido. Se possível, escute o retorno da requisição para saber o momento de clicar na interface;
-- **Diferencial 2** - Criar uma conta na tela de Login/Cadastro. Observe que existe um captcha no formulário, então é necessário decidir como abordar este campo;
-- **Diferencial 3** - Adicionar um produto **aleatório** do catalogo de moda masculina no carrinho;
-- **Diferencial 4** - Adicionar comentário em um produto **aleatório** do catálogo de moda masculina no carrinho;
-- **Diferencial 5** - Gerar um relatório automático do teste.
+2. **Instale o Mochawesome Report**: 
 
-## Readme do Repositório
+    `npm i --save-dev cypress-mochawesome-reporter`
 
-- Deve conter o título do projeto
-- Uma descrição sobre o projeto em frase
-- Deve conter uma lista com linguagem, framework e/ou tecnologias usadas
-- Como instalar e usar o projeto (instruções)
-- Não esqueça o [.gitignore](https://www.toptal.com/developers/gitignore)
-- Se está usando github pessoal, referencie que é um challenge by coodesh:  
+3. **Execute o comando no terminal**: 
+
+    `npx cypress open`
+
+
+4. **Na página de boas vindas do Cypress**: clique em 'E2E Testing'
+
+5. Selecione o browser de sua preferência
+
+6. Clique em 'Start E2E Testing'
+
+7. Será aberta a aba Specs
+
+8. Clique no caso de teste LumaStore.cy 
+
+
+Você pode também rodar o projeto no modo headless
+
+    `npx cypress run`
+
+
+9. Após a execução dos cenários, será encontrado o relatório dos testes dentro da pasta:
+
+    `QA.DEMO-LUMA-STORE\mochawesome-report\mochawesome.html`
 
 >  This is a challenge by [Coodesh](https://coodesh.com/)
-
-## Finalização e Instruções para a Apresentação
-
-1. Adicione o link do repositório com a sua solução no teste
-2. Verifique se o Readme está bom e faça o commit final em seu repositório;
-3. Envie e aguarde as instruções para seguir. Sucesso e boa sorte. =)
-
-## Suporte
-
-Use a [nossa comunidade](https://discord.gg/rdXbEvjsWu) para tirar dúvidas sobre o processo ou envie uma mensagem diretamente a um especialista no chat da plataforma. 
-
-
-Use a [nossa comunidade](https://discord.gg/rdXbEvjsWu) para tirar dúvidas sobre o processo ou envie uma mensagem diretamente a um especialista no chat da plataforma. 

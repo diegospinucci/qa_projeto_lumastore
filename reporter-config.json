@@ -1,0 +1,15 @@
+{
+    "reporterEnabled": "mochawesome",
+    "mochawesomeReporterOptions": {
+      "reportDir": "mochawesome-report",
+      "quiet": true,
+      "overwrite": false,
+      "html": true,
+      "json": true,
+      "charts": true,
+      "reportPageTitle": "Relatório de Testes",
+      "embeddedScreenshots": true,
+      "inlineAssets": true,
+      "saveAllAttempts": false
+    }
+  }

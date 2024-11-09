@@ -1,0 +1,24 @@
+{
+  "name": "Luma-Store",
+  "version": "1.0.0",
+  "description": "Teste e2e de Automação em Cypress",
+  "main": "index.js",
+  "scripts": {
+    "modo-visual": "npx cypress open",
+    "modo-codigo": "npx cypress run"
+  },
+  "author": "Diego Spinucci Cavalcanti",
+  "devDependencies": {
+    "cypress-mochawesome-reporter": "^3.8.2"
+  },
+  "dependencies": {
+    "cypress": "^13.15.2",
+    "cypress-multi-reporters": "^2.0.4",
+    "cypress-xpath": "^2.0.1",
+    "mocha": "^10.8.2",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.3.0",
+    "mochawesome-report-generator": "^6.2.0",
+    "node": "^22.11.0"
+  }
+}
