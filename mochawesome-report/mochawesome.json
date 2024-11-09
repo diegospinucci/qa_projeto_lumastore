@@ -1,0 +1,307 @@
+{
+  "stats": {
+    "suites": 6,
+    "tests": 6,
+    "passes": 6,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-11-09T17:13:08.453Z",
+    "end": "2024-11-09T17:14:39.537Z",
+    "duration": 91084,
+    "testsRegistered": 6,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ae10cb5a-f2ad-4212-856c-5a8c66f07dbf",
+      "title": "",
+      "fullFile": "cypress\\e2e\\tests\\LumaStore.cy.js",
+      "file": "cypress\\e2e\\tests\\LumaStore.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "bf4a2a4b-7017-4fe3-8947-adbc371a36d8",
+          "title": "Verificar se a Home Page carrega corretamente",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verificar HomePage",
+              "fullTitle": "Verificar se a Home Page carrega corretamente Verificar HomePage",
+              "timedOut": null,
+              "duration": 4756,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_Home.default.VerificarMensagemBanner();\n_Home.default.VerificarLogo();\n_Home.default.VerificarBarraDeBusca();\n_Home.default.VerificarMenu();\n_Home.default.VerificarBannersDaPagina();\n_Home.default.VerificarFooter();\n_Home.default.verificarCopyright();",
+              "err": {},
+              "uuid": "9feda66f-199c-4edd-9129-85176dcb47ea",
+              "parentUUID": "bf4a2a4b-7017-4fe3-8947-adbc371a36d8",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9feda66f-199c-4edd-9129-85176dcb47ea"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4756,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "77b9acfc-963a-4c6d-96e8-6e880a87521e",
+          "title": "Verificar busca por camisa",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Busca por SHIRT",
+              "fullTitle": "Verificar busca por camisa Busca por SHIRT",
+              "timedOut": null,
+              "duration": 15619,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_Home.default.SelecionarUltimaOpcao(termoDeBusca[0]);\n_ResultadoDeBusca.default.VerificarGrid();",
+              "err": {},
+              "uuid": "f9b78311-c56a-44fa-8fc5-70d805a70d05",
+              "parentUUID": "77b9acfc-963a-4c6d-96e8-6e880a87521e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f9b78311-c56a-44fa-8fc5-70d805a70d05"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 15619,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "bdabeddd-1845-462c-889a-2cab5cb7a387",
+          "title": "Verificar Adicionar produto no carrinho",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Adicionar produto no carrinho",
+              "fullTitle": "Verificar Adicionar produto no carrinho Adicionar produto no carrinho",
+              "timedOut": null,
+              "duration": 8760,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_Home.default.navegarPLP('Men', 'Top');\n_PLP.default.navegarPDP();\n_PDP.default.adicionarProdutoNoCarrinho();",
+              "err": {},
+              "uuid": "7fbdd3a8-cef1-4761-97ad-ed81748da9f0",
+              "parentUUID": "bdabeddd-1845-462c-889a-2cab5cb7a387",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "7fbdd3a8-cef1-4761-97ad-ed81748da9f0"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 8760,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "c4a5142a-8e66-48e4-9514-1d5dd972d6a9",
+          "title": "Verificar Cadastro de Usuário",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Cadastro de usuário",
+              "fullTitle": "Verificar Cadastro de Usuário Cadastro de usuário",
+              "timedOut": null,
+              "duration": 10546,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://magento.softwaretestingboard.com/customer/account/create/');\n_CriarContaeLogar.default.CriarConta();\n_CriarContaeLogar.default.VerificarConta();",
+              "err": {},
+              "uuid": "005fbc79-d557-42be-9012-56d1494d6efa",
+              "parentUUID": "c4a5142a-8e66-48e4-9514-1d5dd972d6a9",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "005fbc79-d557-42be-9012-56d1494d6efa"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 10546,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "98d37110-944c-46fe-8691-cf387f5cbf13",
+          "title": "Verificar Adicionar comentário em um produto",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Adicionar comentário",
+              "fullTitle": "Verificar Adicionar comentário em um produto Adicionar comentário",
+              "timedOut": null,
+              "duration": 12938,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_Home.default.navegarPLP('Men', 'Top');\n_PLP.default.navegarPDP();\n_PDP.default.adicionarComentario();",
+              "err": {},
+              "uuid": "30d55a64-65b9-482b-97c6-c1d4556a12cb",
+              "parentUUID": "98d37110-944c-46fe-8691-cf387f5cbf13",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "30d55a64-65b9-482b-97c6-c1d4556a12cb"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 12938,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "07b2f553-3f1b-40cc-afed-3790a0fd185d",
+          "title": "Verificar Checkout do Usuário",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Realizar Checkout",
+              "fullTitle": "Verificar Checkout do Usuário Realizar Checkout",
+              "timedOut": null,
+              "duration": 35304,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_Home.default.navegarPLP('Men', 'Top');\n_PLP.default.navegarPDP();\n_PDP.default.adicionarProdutoNoCarrinho();\n_PDP.default.realizarCheckout();",
+              "err": {},
+              "uuid": "bdf7d416-cb3d-400e-b6a4-e355371ee756",
+              "parentUUID": "07b2f553-3f1b-40cc-afed-3790a0fd185d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "bdf7d416-cb3d-400e-b6a4-e355371ee756"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 35304,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "mochawesome-report",
+        "quiet": true,
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "charts": true,
+        "reportPageTitle": "Relatório de Testes",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "saveAllAttempts": false
+      },
+      "version": "6.2.0"
+    }
+  }
+}
